@@ -71,20 +71,60 @@
             <div class="under_sidebar"></div>
 
             
-            <div class="content content-profil" style="padding:20px;">
+            <div class="content content-ticket" style="padding:20px;">
+                <h1 class="mb-0">Ticket N°1</h1>
                 <form>
-                    <div class="form-group" >
-                      <label for="name"class="mt-5">Nom</label>
-                      <input type="text" class="form-control mb-3" id="name" placeholder="Nom">
-                      <label for="prenom">Prénom</label>
-                      <input type="text" class="form-control mb-3"  id="prenom" placeholder="Prénom">
-                      <label for="mail">Email</label>
-                      <input type="email" class="form-control mb-3" id="mail" placeholder="Mail">
-                      <label for="exampleInputPassword1">Mot de passe</label>
-                      <input type="password" class="form-control mb-3" id="exampleInputPassword1" placeholder="Password">
+                    <div class="form-group">
+
+                        <label for="projet" class="mt-3 d-block">Projet</label>
+                        <select name="projet" id="projet">
+                            <option selected value="projet-alpha">Projet Alpha</option>
+                            <option value="projet-alpha">Projet Beta</option>
+                            <option value="projet-alpha">Projet Gamma</option>
+                            <option value="projet-alpha">Projet Delta</option>
+                        </select>
+
+                        <label for="theme" class=" mt-3 d-block">Thème</label>
+                        <select name="theme" id="theme">
+                            <option value="projet-alpha">Front-visuel</option>
+                            <option value="projet-alpha">Front-js</option>
+                            <option value="projet-alpha">Back</option>
+                            <option value="projet-alpha">Maquette</option>
+                        </select>
+
+                        <label for="ticket" class=" mt-3 d-block">Nom du ticket</label>
+                        <select name="ticket" id="ticket">
+                            <option value="projet-alpha">Intégrer la navbar varticale</option>
+                            <option value="projet-alpha">Projet Beta</option>
+                            <option value="projet-alpha">Projet Gamma</option>
+                            <option value="projet-alpha">Projet Delta</option>
+                        </select>
+
+                        <label for="charge" class=" mt-3 d-block">Chargé du ticket</label>
+                        <select name="charge" id="charge">
+                            <option value="projet-alpha">Mathieu</option>
+                            <option value="projet-alpha">Sebastien</option>
+                            <option value="projet-alpha">Paul</option>
+                            <option value="projet-alpha">Julie</option>
+                        </select>
+
+                        <label for="statut" class=" mt-3 d-block">Statut</label>
+                        <select name="statut" id="statut">
+                            <option value="projet-alpha">A faire</option>
+                            <option value="projet-alpha">En cours</option>
+                            <option value="projet-alpha">Terminé</option>
+                            <option value="projet-alpha">Bloquant</option>
+                        </select>
+
+                        <a href="./index.html"><button type="submit" class="btn btn-primary m-0 d-block mt-4 px-5">Modifier</button></a>
                     </div>
-                    <button type="submit" class="btn btn-primary m-0 w-100">Envoyer</button>
-                  </form>
+
+                    <div class="form-group">
+                        <label for="statut" class=" mt-3 d-block">Remarque</label>
+                        <input type="textarea" id="remarque" class="w-100 h-75">
+                    </div>
+
+                </form>
             </div>
         </div>
  

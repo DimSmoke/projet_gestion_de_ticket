@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="stylesheet" type="text/css" href="./Bootstrap/css/bootstrap.min.css">
+    </head>
+    <body>
+        <script src="./Bootstrap/js/jquery-1.12.0.min.js"></script>
+        <script src="./Bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- Navbar -->
+
+        <header class="header">
+            <nav class="navbar fixed-top navbar-expand navbar-light d-flex justify-content-between" style="background-color:#0748A6; height:64px;">
+                <a class="navbar-brand font-weight-bold" style="color:white" href="./index.html">Tickets Catcher</a>
+                <ul class="navbar-nav navbar-right">
+                    <a href="./page_liste_clients.html" class="btn btn-lg bouton-nav d-flex align-items-center" role="button" aria-pressed="true">Mes clients</a>
+                    <a href="./page_liste_projets.html" class="btn btn-lg bouton-nav d-flex align-items-center" role="button" aria-pressed="true">Mes projets</a>
+                    <img src="./assets/notification.svg" class="bell btn2"/>
+                    <a href="./page_profil.html" class="" role="button" aria-pressed="true"><img src="./assets/dog.jpg" class="btn2" style="height:40px; border-radius:50%"/></a>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container_ d-flex flex-row">
+            
+            <!-- Sidebar -->
+
+            <div class="sidebar d-flex flex-column">
+                <div class="project_name d-flex">
+                    <div class="logo_project" style="height:58px; width:58px;">
+                        <img src="./assets/travail.jpg" class="img-circle"/>
+                    </div>
+                    <div class="info_project d-flex flex-column" style="margin-left:5px">
+                        <h4 style="color:#3A7FC5">Projet Alpha</h4>
+                        <p style="color:#606060">12 membres</p>
+                    </div>
+                </div>
+                <div class="project_menu d-flex flex-column align-items-start">
+                    <div class="menu_item d-flex flex-row align-items-center">
+                        <div class="menu_picto">
+                            <img src="./assets/dashboard.svg" class="bell btn2"/>
+                        </div>
+                        <a href="./page_dashboard.html" class="menu_link">Tableau de bord</a>
+                    </div>
+                    <div class="menu_item d-flex flex-row align-items-center">
+                        <div class="menu_picto">
+                            <img src="./assets/user.svg" class="bell btn2"/>
+                        </div>
+                        <a href="./page_client.html" class="menu_link">Client</a>
+                    </div>
+                    <div class="menu_item d-flex flex-row align-items-center">
+                        <div class="menu_picto">
+                            <img src="./assets/bar-chart.svg" class="bell btn2"/>
+                        </div>
+                        <a href="./page_statistiques.html" class="menu_link">Statistiques</a>
+                    </div>
+                </div>
+                <div class="other_projects d-flex flex-column">
+                    <h4 class="other_title">Mes autres projets</h4>
+                    <div class="other_list d-flex flex-column justify-content-around">
+                        <a href="#" class="menu_link">Projet Beta</a>
+                        <a href="#" class="menu_link">Projet Gamma</a>
+                        <a href="#" class="menu_link">Projet Delta</a>
+                        <a href="#" class="menu_link">Projet Epsilon</a>
+                    </div>
+                </div>
+            </div>
+            <div class="under_sidebar"></div>
+
+            
+            <div class="content content-index" style="padding:20px;">
+                    <div class="align-content-center">
+                        <h1 class="mb-0 d-inline-block mr-3">Gestion des tickets</h1>
+                        <span class="tag">Projet en cours</span>
+                    </div>
+    
+                    <div class="row mt-5">
+                        <div class=" ticket col">
+                            <span class="number">65</span>
+                            <span class="">Tous les tickets</span>
+                        </div>
+                        <div class="ticket col">
+                            <span class="number vert">12</span>
+                            <span class="">Tickets terminés</span>
+                        </div>
+                        <div class="ticket col">
+                            <span class="number orange">26</span>
+                            <span class="">Tickets en cours</span>
+                        </div>
+                        <div class="ticket col">
+                            <span class="number gris">16</span>
+                            <span class="">Tickets à faire</span>
+                        </div>
+                        <div class="ticket col">
+                            <span class="number rouge">11</span>
+                            <span class="">Points bloquants</span>
+                        </div>
+                    </div>
+    
+                    <ul class="list-group mt-5">
+                        <li class="list-group-item legende">
+                            <span class="number">N°</span>
+                            <span class="theme">Thème</span>
+                            <span class="nom">Nom du ticket</span>
+                            <span class="charge">Chargé du ticket</span>
+                            <span class="statut">Statut</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="number">1</span>
+                            <span class="theme">Front visuel</span>
+                            <span class="nom"><a href="page_ticket.html">Intégrer la navbar verticlale</a></span>
+                            <span class="charge">Mathieu</span>
+                            <span class="statut orange">En cours</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="number">2</span>
+                            <span class="theme">Back</span>
+                            <span class="nom">Créer la table des utilisateurs</span>
+                            <span class="charge">Paul</span>
+                            <span class="statut vert">Terminé</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="number">3</span>
+                            <span class="theme">Maquette</span>
+                            <span class="nom">Faire la home page</span>
+                            <span class="charge">Julie</span>
+                            <span class="statut vert">Terminé</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="number">4</span>
+                            <span class="theme">Back</span>
+                            <span class="nom">Faire foncionner la page de connexion</span>
+                            <span class="charge">Paul</span>
+                            <span class="statut orange">En cours</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="number">5</span>
+                            <span class="theme">Front visuel</span>
+                            <span class="nom">Intégrer la home page</span>
+                            <span class="charge">Mathieu</span>
+                            <span class="statut gris">A faire</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="number">6</span>
+                            <span class="theme">Front JS</span>
+                            <span class="nom">Réaliser le suivi du panier</span>
+                            <span class="charge">Mathieu</span>
+                            <span class="statut orange">En cours</span>
+                        </li>
+                    </ul>
+    
+            </div>
+        </div>   
+    </body>
+</html>

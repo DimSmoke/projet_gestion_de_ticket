@@ -4,6 +4,8 @@
     
 }
 
+/* -----------------------------Navbar---------------------------------**/
+
 .bouton-nav{
     font-weight: bold !important;
     color:#606060;
@@ -29,6 +31,8 @@
     width: 100%;
     margin-top:64px;
 }
+
+/* -----------------------------Sidebar---------------------------------**/
 
 .sidebar {
     margin-top:64px;
@@ -93,3 +97,114 @@
     margin-left:20px;
     height:120px;
 }
+
+/* -----------------------------Dashboard-content---------------------------------**/
+
+.content-index li {
+    display: flex;
+}
+
+span.number {
+    width: 10%;
+}
+
+span.theme {
+    width: 20%;
+}
+
+span.nom {
+    width: 30%;
+}
+
+span.charge {
+    width: 30%;
+}
+
+span.statut {
+    width: 10%;
+}
+
+span.orange {
+    color: orange;
+}
+span.rouge {
+    color: red;
+}
+span.vert {
+    color: green;
+}
+span.gris {
+    color: grey;
+}
+
+.ticket {
+    display: flex;
+    align-items: center;
+}
+
+.ticket span.number {
+ font-size: 40px;
+ width: auto;
+ margin-right: 5px;
+ font-weight: bold;
+}
+
+.ticket span {
+font-size: 12px;
+width: 50%;
+max-width: 70px;
+}
+
+
+/* -----------------------------Ticket-content---------------------------------**/
+
+
+.content select {
+    padding: 4px 8px;
+    width: 75%;
+}
+
+.content-ticket {
+    width: 100%;
+   }
+
+.content-profil form {
+    width: 80%;
+    max-width: 250px;
+}
+
+.content-ticket form {
+ display: flex;
+ width: 100%;
+}
+
+.content-ticket .form-group {
+ width: 50%;
+}
+
+
+.content-index li.legende {
+    font-weight: bold;
+}
+
+span.tag {
+    background-color: orange;
+    border-radius: 10px;
+    padding: 3px 10px;
+}
+
+.content.content-index{
+    width: 100%;
+}
+
+
+.content .btn {
+    background-color: #0748A6;
+}
+
+.content .btn:hover {
+    background-color: #0748A6;
+    cursor: pointer;
+}
+
+
