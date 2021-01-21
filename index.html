@@ -13,24 +13,65 @@
         <!-- Navbar -->
 
         <header class="header">
-            <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color:#0748A6;">
-                <a class="navbar-brand" style="color:white" href="#">Projet Gestion de Ticket</a>
-              
-                <div class="d-flex flex-row-reverse">
-                  <ul class="navbar-nav">
-                    <a href="./page_liste_clients.html" class="btn btn-lg bouton-nav" role="button" aria-pressed="true">Mes clients</a>
-                    <a href="./page_liste_projets.html" class="btn btn-lg bouton-nav" role="button" aria-pressed="true">Mes projets</a>
-                    <a href="./page_profil.html" class="btn btn-primary btn-lg bouton-nav" role="button" aria-pressed="true">P</a>
-                  </ul>
-                </div>
-              </nav>
+            <nav class="navbar fixed-top navbar-expand navbar-light d-flex justify-content-between" style="background-color:#0748A6; height:64px;">
+                <a class="navbar-brand font-weight-bold" style="color:white" href="#">Tickets Catcher</a>
+                <ul class="navbar-nav navbar-right">
+                    <a href="./page_liste_clients.html" class="btn btn-lg bouton-nav d-flex align-items-center" role="button" aria-pressed="true">Mes clients</a>
+                    <a href="./page_liste_projets.html" class="btn btn-lg bouton-nav d-flex align-items-center" role="button" aria-pressed="true">Mes projets</a>
+                    <img src="./assets/notification.svg" class="bell btn2"/>
+                    <a href="./page_profil.html" class="" role="button" aria-pressed="true"><img src="./assets/dog.jpg" class="btn2" style="height:40px; border-radius:50%"/></a>
+                </ul>
+            </nav>
         </header>
 
-        <div class="container">
-            <div class="sidebar">
+        <div class="container_ d-flex flex-row">
+            
+            <!-- Sidebar -->
 
+            <div class="sidebar d-flex flex-column">
+                <div class="project_name d-flex">
+                    <div class="logo_project" style="height:58px; width:58px;">
+                        <img src="./assets/dog.jpg" class="img-circle"/>
+                    </div>
+                    <div class="info_project d-flex flex-column" style="margin-left:5px">
+                        <h4 style="color:#3A7FC5">Projet Alpha</h4>
+                        <p style="color:#606060">12 membres</p>
+                    </div>
+                </div>
+                <div class="project_menu d-flex flex-column align-items-start">
+                    <div class="menu_item d-flex flex-row align-items-center">
+                        <div class="menu_picto">
+                            <img src="./assets/dashboard.svg" class="bell btn2"/>
+                        </div>
+                        <a href="./page_dashboard.html" class="menu_link">Tableau de bord</a>
+                    </div>
+                    <div class="menu_item d-flex flex-row align-items-center">
+                        <div class="menu_picto">
+                            <img src="./assets/user.svg" class="bell btn2"/>
+                        </div>
+                        <a href="./page_client.html" class="menu_link">Client</a>
+                    </div>
+                    <div class="menu_item d-flex flex-row align-items-center">
+                        <div class="menu_picto">
+                            <img src="./assets/bar-chart.svg" class="bell btn2"/>
+                        </div>
+                        <a href="./page_statistiques.html" class="menu_link">Statistiques</a>
+                    </div>
+                </div>
+                <div class="other_projects d-flex flex-column">
+                    <h4 class="other_title">Mes autres projets</h4>
+                    <div class="other_list d-flex flex-column justify-content-around">
+                        <a href="#" class="menu_link">Projet Beta</a>
+                        <a href="#" class="menu_link">Projet Gamma</a>
+                        <a href="#" class="menu_link">Projet Delta</a>
+                        <a href="#" class="menu_link">Projet Epsilon</a>
+                    </div>
+                </div>
             </div>
-            <div class="content">
+            <div class="under_sidebar"></div>
+
+            
+            <div class="content" style="padding:20px;">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in accumsan purus. Morbi sem nibh, finibus euismod aliquam vel, tincidunt at ipsum. Pellentesque lectus purus, egestas scelerisque pulvinar non, viverra eu massa. Sed eu neque quam. Duis turpis dui, venenatis dapibus tincidunt et, vehicula id massa. Sed eleifend sagittis finibus. Quisque mauris metus, mollis quis ex ac, tincidunt varius quam. Aenean tincidunt volutpat malesuada. Maecenas sagittis ipsum id nulla aliquet, ultrices commodo elit viverra. Duis non diam consequat, tempor ipsum id, egestas felis. Curabitur eros ante, eleifend sit amet aliquet sit amet, convallis at nulla.
 
 Ut urna libero, cursus et elementum sed, condimentum in leo. Mauris ullamcorper imperdiet erat a luctus. Vestibulum vel turpis malesuada, vestibulum dui vitae, sagittis erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent maximus, nisi et rutrum consequat, elit ante semper eros, nec feugiat massa diam vitae justo. Vivamus dapibus in metus ut semper. Nunc commodo vestibulum ornare. Sed mollis, nulla ac imperdiet dignissim, quam quam euismod massa, in sollicitudin mi sem non mauris. Pellentesque condimentum erat id dui elementum, eget fermentum justo venenatis. Nullam non ipsum diam.
@@ -56,19 +97,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in accumsan purus
 
 Ut urna libero, cursus et elementum sed, condimentum in leo. Mauris ullamcorper imperdiet erat a luctus. Vestibulum vel turpis malesuada, vestibulum dui vitae, sagittis erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent maximus, nisi et rutrum consequat, elit ante semper eros, nec feugiat massa diam vitae justo. Vivamus dapibus in metus ut semper. Nunc commodo vestibulum ornare. Sed mollis, nulla ac imperdiet dignissim, quam quam euismod massa, in sollicitudin mi sem non mauris. Pellentesque condimentum erat id dui elementum, eget fermentum justo venenatis. Nullam non ipsum diam.
 
-In blandit diam sed dictum dictum. Maecenas sem quam, cursus sit amet velit eget, congue molestie erat. Sed quis laoreet metus. Proin mollis aliquam venenatis. Sed sit amet lacus eu felis pulvinar facilisis quis eget mauris. Nullam ut elementum nibh. Integer et tellus et dui consectetur tristique nec ut neque. In placerat elit nec urna rutrum, vel auctor metus rhoncus. Vestibulum est felis, gravida sed sem id, congue pretium lorem. Maecenas tristique eget mauris et consequat.
-
-Integer vehicula ante ac felis sollicitudin, nec fermentum dui placerat. Aenean felis nisl, tincidunt vitae sem ac, eleifend venenatis sapien. Proin at ex vitae risus facilisis luctus vitae ut purus. Praesent lacinia eleifend ligula nec mattis. Nullam at consequat sem, at efficitur magna. Aenean sagittis elit ut sapien venenatis consequat varius sed lorem. Suspendisse et purus non enim pulvinar ultrices. Maecenas eleifend ipsum sed orci accumsan pharetra a sit amet sem. Nulla ut porttitor turpis, in suscipit enim. Ut ut libero suscipit, fringilla nibh iaculis, iaculis nisi. Nulla facilisi. Donec at volutpat ante, sed tempus neque. Quisque at sagittis nisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec et est magna.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in accumsan purus. Morbi sem nibh, finibus euismod aliquam vel, tincidunt at ipsum. Pellentesque lectus purus, egestas scelerisque pulvinar non, viverra eu massa. Sed eu neque quam. Duis turpis dui, venenatis dapibus tincidunt et, vehicula id massa. Sed eleifend sagittis finibus. Quisque mauris metus, mollis quis ex ac, tincidunt varius quam. Aenean tincidunt volutpat malesuada. Maecenas sagittis ipsum id nulla aliquet, ultrices commodo elit viverra. Duis non diam consequat, tempor ipsum id, egestas felis. Curabitur eros ante, eleifend sit amet aliquet sit amet, convallis at nulla.
-
-Ut urna libero, cursus et elementum sed, condimentum in leo. Mauris ullamcorper imperdiet erat a luctus. Vestibulum vel turpis malesuada, vestibulum dui vitae, sagittis erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent maximus, nisi et rutrum consequat, elit ante semper eros, nec feugiat massa diam vitae justo. Vivamus dapibus in metus ut semper. Nunc commodo vestibulum ornare. Sed mollis, nulla ac imperdiet dignissim, quam quam euismod massa, in sollicitudin mi sem non mauris. Pellentesque condimentum erat id dui elementum, eget fermentum justo venenatis. Nullam non ipsum diam.
-
-In blandit diam sed dictum dictum. Maecenas sem quam, cursus sit amet velit eget, congue molestie erat. Sed quis laoreet metus. Proin mollis aliquam venenatis. Sed sit amet lacus eu felis pulvinar facilisis quis eget mauris. Nullam ut elementum nibh. Integer et tellus et dui consectetur tristique nec ut neque. In placerat elit nec urna rutrum, vel auctor metus rhoncus. Vestibulum est felis, gravida sed sem id, congue pretium lorem. Maecenas tristique eget mauris et consequat.
-
-Integer vehicula ante ac felis sollicitudin, nec fermentum dui placerat. Aenean felis nisl, tincidunt vitae sem ac, eleifend venenatis sapien. Proin at ex vitae risus facilisis luctus vitae ut purus. Praesent lacinia eleifend ligula nec mattis. Nullam at consequat sem, at efficitur magna. Aenean sagittis elit ut sapien venenatis consequat varius sed lorem. Suspendisse et purus non enim pulvinar ultrices. Maecenas eleifend ipsum sed orci accumsan pharetra a sit amet sem. Nulla ut porttitor turpis, in suscipit enim. Ut ut libero suscipit, fringilla nibh iaculis, iaculis nisi. Nulla facilisi. Donec at volutpat ante, sed tempus neque. Quisque at sagittis nisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec et est magna.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in accumsan purus. Morbi sem nibh, finibus euismod aliquam vel, tincidunt at ipsum. Pellentesque lectus purus, egestas scelerisque pulvinar non, viverra eu massa. Sed eu neque quam. Duis turpis dui, venenatis dapibus tincidunt et, vehicula id massa. Sed eleifend sagittis finibus. Quisque mauris metus, mollis quis ex ac, tincidunt varius quam. Aenean tincidunt volutpat malesuada. Maecenas sagittis ipsum id nulla aliquet, ultrices commodo elit viverra. Duis non diam consequat, tempor ipsum id, egestas felis. Curabitur eros ante, eleifend sit amet aliquet sit amet, convallis at nulla.
-
-Ut urna libero, cursus et elementum sed, condimentum in leo. Mauris ullamcorper imperdiet erat a luctus. Vestibulum vel turpis malesuada, vestibulum dui vitae, sagittis erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent maximus, nisi et rutrum consequat, elit ante semper eros, nec feugiat massa diam vitae justo. Vivamus dapibus in metus ut semper. Nunc commodo vestibulum ornare. Sed mollis, nulla ac imperdiet dignissim, quam quam euismod massa, in sollicitudin mi sem non mauris. Pellentesque condimentum erat id dui elementum, eget fermentum justo venenatis. Nullam non ipsum diam.
+In blandit diam sed dictum dictum. ris ullamcorper imperdiet erat a luctus. Vestibulum vel turpis malesuada, vestibulum dui vitae, sagittis erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent maximus, nisi et rutrum consequat, elit ante semper eros, nec feugiat massa diam vitae justo. Vivamus dapibus in metus ut semper. Nunc commodo vestibulum ornare. Sed mollis, nulla ac imperdiet dignissim, quam quam euismod massa, in sollicitudin mi sem non mauris. Pellentesque condimentum erat id dui elementum, eget fermentum justo venenatis. Nullam non ipsum diam.
 
 In blandit diam sed dictum dictum. Maecenas sem quam, cursus sit amet velit eget, congue molestie erat. Sed quis laoreet metus. Proin mollis aliquam venenatis. Sed sit amet lacus eu felis pulvinar facilisis quis eget mauris. Nullam ut elementum nibh. Integer et tellus et dui consectetur tristique nec ut neque. In placerat elit nec urna rutrum, vel auctor metus rhoncus. Vestibulum est felis, gravida sed sem id, congue pretium lorem. Maecenas tristique eget mauris et consequat.
 
