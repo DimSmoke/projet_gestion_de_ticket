@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="stylesheet" type="text/css" href="./Bootstrap/css/bootstrap.min.css">
+    </head>
+    <body>
+        <script src="./Bootstrap/js/jquery-1.12.0.min.js"></script>
+        <script src="./Bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- Navbar -->
+
+        <header class="header">
+            <nav class="navbar fixed-top navbar-expand navbar-light d-flex justify-content-between" style="background-color:#0748A6; height:64px;">
+                <a class="navbar-brand font-weight-bold" style="color:white" href="./index.html">Tickets Catcher</a>
+                <ul class="navbar-nav navbar-right">
+                    <a href="./page_liste_clients.html" class="btn btn-lg bouton-nav d-flex align-items-center" role="button" aria-pressed="true">Mes clients</a>
+                    <a href="./page_liste_projets.html" class="btn btn-lg bouton-nav d-flex align-items-center" role="button" aria-pressed="true">Mes projets</a>
+                    <img src="./assets/notification.svg" class="bell btn2"/>
+                    <a href="./page_profil.html" class="" role="button" aria-pressed="true"><img src="./assets/dog.jpg" class="btn2" style="height:40px; border-radius:50%"/></a>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container_ d-flex flex-row">
+            
+            <!-- Sidebar -->
+
+            <div class="sidebar d-flex flex-column">
+                <div class="project_name d-flex">
+                    <div class="logo_project" style="height:58px; width:58px;">
+                        <img src="./assets/travail.jpg" class="img-circle"/>
+                    </div>
+                    <div class="info_project d-flex flex-column" style="margin-left:5px">
+                        <h4 style="color:#3A7FC5">Projet Alpha</h4>
+                        <p style="color:#606060">12 membres</p>
+                    </div>
+                </div>
+                <div class="project_menu d-flex flex-column align-items-start">
+                    <div class="menu_item d-flex flex-row align-items-center">
+                        <div class="menu_picto">
+                            <img src="./assets/dashboard.svg" class="bell btn2"/>
+                        </div>
+                        <a href="./page_dashboard.html" class="menu_link">Tableau de bord</a>
+                    </div>
+                    <div class="menu_item d-flex flex-row align-items-center">
+                        <div class="menu_picto">
+                            <img src="./assets/user.svg" class="bell btn2"/>
+                        </div>
+                        <a href="./page_client.html" class="menu_link">Client</a>
+                    </div>
+                    <div class="menu_item d-flex flex-row align-items-center">
+                        <div class="menu_picto">
+                            <img src="./assets/bar-chart.svg" class="bell btn2"/>
+                        </div>
+                        <a href="./page_statistiques.html" class="menu_link">Statistiques</a>
+                    </div>
+                </div>
+                <div class="other_projects d-flex flex-column">
+                    <h4 class="other_title">Mes autres projets</h4>
+                    <div class="other_list d-flex flex-column justify-content-around">
+                        <a href="#" class="menu_link">Projet Beta</a>
+                        <a href="#" class="menu_link">Projet Gamma</a>
+                        <a href="#" class="menu_link">Projet Delta</a>
+                        <a href="#" class="menu_link">Projet Epsilon</a>
+                    </div>
+                </div>
+            </div>
+            <div class="under_sidebar"></div>
+
+            <div class="content content-index" style="padding:20px;">
+                    <div class="d-flex align-items-center">
+                        <h1 class="mb-0 d-inline-block mr-3" style="color:#606060; font-weight: bold;">Statistiques du projet Alpha</h1>
+                        <span class="tag">Projet en cours</span>
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <div class="col-md-6"><img src="./assets/stats_1.PNG"/></div>
+                        <div class="col-md-6"></div>
+                    </div>
+            </div>
+        </div>   
+    </body>
+</html>

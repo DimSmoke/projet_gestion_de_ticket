@@ -98,10 +98,46 @@
     height:120px;
 }
 
+/* -----------------------------Liste-content---------------------------------**/
+
+.carte{
+    background-color:#F5F5F5;
+    height:100px;
+    min-width:200px !important;
+    margin-left:50px;
+    margin-right:50px;
+    margin-bottom:10px;
+    margin-top:10px;
+    border:1px solid #606060;
+    border-radius:10px;
+}
+
+.carte:hover{
+    background-color:#d6d6d6;
+    border:3px solid #3A7FC5;
+}
+
+.carte_title{
+    color: #606060;
+    font-weight: bold;
+}
+
+.carte:hover .carte_title{
+    color:#3A7FC5;
+    font-weight: bold;
+}
+
 /* -----------------------------Dashboard-content---------------------------------**/
 
 .content-index li {
     display: flex;
+}
+
+span.tag {
+    background-color: #F6C342;
+    color:#606060;
+    border-radius: 10px;
+    padding: 3px 10px;
 }
 
 span.number {
@@ -125,16 +161,16 @@ span.statut {
 }
 
 span.orange {
-    color: orange;
+    color: #F6C342;
 }
 span.rouge {
-    color: red;
+    color: #CF453C;
 }
 span.vert {
-    color: green;
+    color: #1D8830;
 }
 span.gris {
-    color: grey;
+    color: #486686;
 }
 
 .ticket {
@@ -187,12 +223,6 @@ max-width: 70px;
     font-weight: bold;
 }
 
-span.tag {
-    background-color: orange;
-    border-radius: 10px;
-    padding: 3px 10px;
-}
-
 .content.content-index{
     width: 100%;
 }
@@ -207,4 +237,60 @@ span.tag {
     cursor: pointer;
 }
 
+.deconnexion_button{
+    height:40px;
+    width:150px;
+    background-color:#0748A6;
+    border-radius:5px;
+}
 
+/* -----------------------------Connexion-content---------------------------------**/
+
+
+form {
+    background-color: white;
+}
+
+.login-container{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.login-form{
+    padding: 5%;
+    background: #0062cc;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form h3{
+    text-align: center;
+    color: #fff;
+}
+.login-container form{
+    padding: 10%;
+}
+.btnSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+}
+.login-form .btnSubmit{
+    font-weight: 600;
+    color: white;
+    background-color: #0748A6;
+}
+.ForgetPwd{
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-top: 5%;
+}
+
+.connexion_button{
+
+    height:40px;
+    width:150px;
+    background-color:#0748A6;
+    border-radius:5px;
+}
